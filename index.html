@@ -61,7 +61,7 @@
       <section class="hero section overlay">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-btn">Замовити послугу</button>
+          <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="section section-bottom">
@@ -123,25 +123,31 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list container-doing-list">
             <li>
-              <img
-                src="./images/development.jpg"
-                alt="Програміст займається розробкою за робочим столом"
-                width="370"
-              />
+              <div class="doing-img-wrap">
+                <img
+                  src="./images/development.jpg"
+                  alt="Програміст займається розробкою за робочим столом"
+                  width="370"
+                /> <p class="doing-bottom-text">десктопні додатки</p>
+              </div>
             </li>
             <li>
-              <img
-                src="./images/phoneprogram.jpg"
-                alt="Дизайнер розробляє програму для смартфонів"
-                width="370"
-              />
+              <div class="doing-img-wrap">
+                <img
+                  src="./images/phoneprogram.jpg"
+                  alt="Дизайнер розробляє програму для смартфонів"
+                  width="370"
+                /> <p class="doing-bottom-text">мобільні додатки</p>
+              </div>
             </li>
             <li>
-              <img
-                src="./images/designing.jpg"
-                alt="веб-дизайнер працює з вибором кольору на графічному планшеті"
-                width="370"
-              />
+              <div class="doing-img-wrap">
+                <img
+                  src="./images/designing.jpg"
+                  alt="веб-дизайнер працює з вибором кольору на графічному планшеті"
+                  width="370"
+                /> <p class="doing-bottom-text">дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -432,5 +438,13 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-icon" data-modal-close><svg class="icon-close" width="11" height="11">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
